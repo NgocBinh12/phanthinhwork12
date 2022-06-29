@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu2.css">
+</head>
+
+<body>
+    <header>
+        <div class="bars">&#11166;</div>
+        <div class="logo">
+            <h1>PhanThinh</h1>
+        </div>
+        <ul id="navbar">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li class="drop-one">
+                <a href="#">Service<span>&#11167</span></a>
+                <div class="menu-one">
+                    <ul>
+                        <li>
+                            <h4>Our Company</h4>
+                        </li>
+                        <li>
+                            <img src="./hinhanh/Hình thoi Luật sư Biểu trưng (1).png">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Deginrer</h4>
+                        </li>
+                        <li>
+                            <a href="#">HTML</a>
+                        </li>
+                        <li>
+                            <a href="#">css</a>
+                        </li>
+                        <li>
+                            <a href="#">Java</a>
+                        </li>
+                        <li>
+                            <a href="#">Python</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Deginrer</h4>
+                        </li>
+                        <li>
+                            <a href="#">HTML</a>
+                        </li>
+                        <li>
+                            <a href="#">css</a>
+                        </li>
+                        <li>
+                            <a href="#">Java</a>
+                        </li>
+                        <li>
+                            <a href="#">Python</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Deginrer</h4>
+                        </li>
+                        <li>
+                            <a href="#">HTML</a>
+                        </li>
+                        <li>
+                            <a href="#">css</a>
+                        </li>
+                        <li>
+                            <a href="#">Java</a>
+                        </li>
+                        <li>
+                            <a href="#">Python</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Deginrer</h4>
+                        </li>
+                        <li>
+                            <a href="#">HTML</a>
+                        </li>
+                        <li>
+                            <a href="#">css</a>
+                        </li>
+                        <li>
+                            <a href="#">Java</a>
+                        </li>
+                        <li>
+                            <a href="#">Python</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Team</a>
+            </li>
+            <li class="drop-two">
+                <a href="#">Social<span>&#11167</span></a>
+                <ul class="menu-two">
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const bars = document.querySelector(".bars");
+        const navBar = document.querySelector("#navbar");
+        bars.addEventListener('click', () => {
+            navBar.classList.toggle("active");
+            bars.classList.toggle("rotate");
+
+        });
+    </script>
+
+</body>
+
+</html>

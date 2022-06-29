@@ -1,0 +1,108 @@
+.menu-one {
+    position: absolute;
+    width: 100%;
+    left: -1000%;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 3px #000;
+}
+
+.drop-one:hover>.menu-one {
+    left: 0;
+}
+
+.menu-one ul {
+    flex: 1;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid#ccc;
+}
+
+.menu-one ul li {
+    border-bottom: 1px solid#ccc;
+}
+
+.menu-one ul h4 {
+    text-transform: uppercase;
+    color: teal;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.menu-one ul a {
+    color: #000;
+}
+
+.menu-one ul img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    text-align: center;
+}
+
+.drop-two {
+    position: relative;
+}
+
+.menu-two {
+    position: absolute;
+    list-style: none;
+    background: #5555;
+    left: -100;
+    display: none;
+}
+
+.menu-two li:hover {
+    background: orange;
+    border-bottom: 1px solid#ccc;
+}
+
+.drop-two:hover>.menu-two {
+    display: block;
+}
+
+span {
+    display: inline-block;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.drop-two:hover span,
+.drop-one:hover span {
+    transform: rotate(-180deg);
+}
+
+@media (max-width:950px) {
+    #navbar {
+        position: absolute;
+        top: 50px;
+        left: -100;
+        text-align: left;
+        transition: 0.5s linear;
+    }
+    #navbar li {
+        display: block;
+    }
+    .menu-one {
+        position: relative;
+        box-shadow: none;
+        display: none;
+    }
+    .drop-one:hover>.menu-one {
+        display: block;
+    }
+    .menu-one ul {
+        text-align: left;
+    }
+    .menu-two {
+        position: relative;
+    }
+    .bars {
+        display: block;
+    }
+    #navbar.active {
+        left: -100%;
+    }
+}

@@ -1,0 +1,27 @@
+.hinhanh a img {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.hinhanh a:hover img {
+    transform: scale(1.1);
+}
+
+.hinhanh a .name {
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px;
+    bottom: 100px;
+    margin: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transform: translateX(-5%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.hinhanh a:hover .name {
+    bottom: 50%;
+    opacity: 1;
+}
