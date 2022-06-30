@@ -2,10 +2,11 @@
     position: absolute;
     width: 100%;
     left: -1000%;
-    background: whitesmoke;
     display: flex;
     justify-content: space-around;
     box-shadow: 0 0 3px #000;
+    background: #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
 }
 
 .drop-one:hover>.menu-one {
@@ -21,6 +22,8 @@
 }
 
 .menu-one ul li {
+    background: #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid#ccc;
 }
 

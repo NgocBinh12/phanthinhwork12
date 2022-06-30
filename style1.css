@@ -5,13 +5,15 @@ body {
     height: 100%;
     font-size: 16px;
     color: #222;
-    margin: 0px;
-    padding: 0px;
 }
 
 .carousel-inner {
     width: 100%;
     height: 50%;
+}
+
+.trangchuu {
+    width: 100%;
 }
 
 .carousel-inner img {
