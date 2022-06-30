@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DichvuVN.css">
+</head>
+
+<body>
+    <div id="taps">
+        <ul class="nav-taps">
+            <li class="active">
+                <a href="#menu_1">menu 1</a>
+            </li>
+            <li>
+                <a href="#menu_2">menu 2</a>
+            </li>
+            <li>
+                <a href="#">menu 3</a>
+            </li>
+        </ul>
+        <div class="tap-content">
+            <div id="menu_1" class="tap-content-item">
+                <h2>Menu1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque voluptate eaque incidunt! Molestiae dolor accusantium illum unde corrupti beatae praesentium saepe. Vitae earum minus nam modi perferendis, ea vero vel.</p>
+                <p>Earum error eum laborum distinctio? Quisquam nobis, quam iste, culpa quod corporis a aut assumenda omnis tenetur soluta blanditiis laborum voluptas iusto iure doloribus esse voluptatum repudiandae? Quis, vel aspernatur.</p>
+                <p>Quos maxime error numquam optio nemo accusantium illo, possimus velit dolor rem laboriosam ut facilis asperiores at sunt tempore aliquid! Incidunt, at. Facere cumque dolores velit libero quia! Quidem, dolor?</p>
+                <p>Magni unde cupiditate commodi a nulla nesciunt atque doloremque. Qui sunt dolores distinctio nesciunt tempore cum, voluptatum corporis ipsum, at sit cupiditate? Doloribus id perspiciatis quos ducimus accusamus, nisi tenetur?</p>
+            </div>
+            <div id="menu_2" class="tap-content-item">
+                <h2>Menu2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id repudiandae maiores sit officia ipsa iste asperiores veritatis fugit nihil. Numquam incidunt quas, nihil nulla eligendi ipsum nostrum omnis inventore iusto.</p>
+                <p>Sint totam excepturi odio consequuntur, corporis reprehenderit maxime fugit ex optio earum? Placeat aliquid similique possimus ea commodi est, fugit explicabo, minima aut rem deserunt! Quas ab veritatis assumenda magnam.</p>
+                <p>Inventore cumque consequatur ab eveniet, alias ullam qui ratione molestiae amet hic repudiandae similique aspernatur. Voluptate eos ab totam nobis iusto aperiam architecto, harum atque tempora optio ex consequuntur iste.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script>
+        $(document).ready(function() {
+            $('.tap-content-item').hide();
+            $('.tap-content-item:first-child').fadeIn();
+            $('.nav-taps li').click(function() {
+                $('.nav-taps li').removeClass('active');
+                $(this).addClass('active');
+                let id_tap_content = $(this).children('a').attr('href');
+                $('.tap-content-item').hide();
+                $(id_tap_content).fadeIn();
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

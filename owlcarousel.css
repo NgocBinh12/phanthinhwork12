@@ -1,0 +1,9 @@
+.khung {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.chungtoi {
+    height: 350px;
+    overflow-y: scroll;
+}
