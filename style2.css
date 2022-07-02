@@ -39,6 +39,10 @@
     border-bottom: 1px black;
 }
 
+.hinhanh a div b {
+    font-size: 33px;
+}
+
 .hinhanh a img {
     transition: all 0.3s ease-in-out;
     position: relative;
