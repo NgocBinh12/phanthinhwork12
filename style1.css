@@ -238,6 +238,15 @@ hr.light {
 
 .danhsach ul {
     list-style-type: none;
+    text-align: left;
+}
+
+.right:hover {
+    background: #f00;
+    content: "";
+    height: 20px;
+    width: 10px;
+    border-radius: 5px;
 }
 
 .phanthinh li a {
@@ -429,7 +438,7 @@ span {
         display: block;
     }
     .menu-one ul {
-        text-align: left;
+        text-align: center;
     }
     .menu-two {
         position: relative;
