@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
 html,
 body {
-    width: 100%;
-    height: 100%;
     font-size: 16px;
     color: #222;
+}
+
+.containerr {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50px;
+    right: 0;
+    overflow: hidden;
 }
 
 .carousel-inner {
@@ -193,5 +200,299 @@ hr.light {
     .anh1 img {
         width: 100%;
         height: 100%;
+    }
+}
+
+.icon1 {
+    font-size: 150px;
+}
+
+.menu {
+    background: black;
+}
+
+.button {
+    border-radius: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .slider img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .slider img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .slider img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.danhsach ul {
+    list-style-type: none;
+}
+
+.phanthinh li a {
+    border-bottom: 1px black;
+}
+
+.hinhanh a div b {
+    font-size: 33px;
+}
+
+.hinhanh a img {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+
+.card-img-top {
+    background: black;
+}
+
+.card :hover {
+    overflow: hidden;
+}
+
+.hinhanh a:hover img {
+    transform: rotate(-10deg) scale(1.3);
+    transition: all 0.3s ease-in-out;
+    background: #000;
+    opacity: 0.3;
+    overflow: hidden;
+}
+
+.hinhanh a .name {
+    position: absolute;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px;
+    bottom: 140px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transform: translateX(-5%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    color: black;
+}
+
+.hinhanh a:hover .name {
+    bottom: 50%;
+    opacity: 1;
+}
+
+.drop-down2 {
+    position: relative;
+}
+
+.drop-down2 .dropdown-toggle {
+    color: #000 !important;
+    padding: .25rem 1.5rem !important;
+}
+
+.drop-down2 .sub-menu2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.logo1 {
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: 2px solid #eb3007;
+    transition: background-color 650ms;
+    display: inline-block;
+}
+
+.logo1 :hover {
+    color: #eb3007;
+    background-color: rgba(0, 0, 0, .2);
+    line-height: initial;
+}
+
+@media screen and (max-width:767px) {
+    .drop-down2 .sub-menu2 {
+        position: static;
+    }
+}
+
+.menu-one {
+    position: absolute;
+    width: 100%;
+    left: -1000%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 3px #000;
+    background: #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.drop-one:hover>.menu-one {
+    left: 0;
+}
+
+.menu-one ul {
+    flex: 1;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid#ccc;
+}
+
+.menu-one ul li img {
+    vertical-align: middle;
+}
+
+.menu-one ul li {
+    background: #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid#ccc;
+}
+
+.menu-one ul h4 {
+    text-transform: uppercase;
+    color: teal;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.menu-one ul a {
+    color: #000;
+}
+
+.menu-one ul img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    text-align: center;
+}
+
+.drop-two {
+    position: relative;
+}
+
+.menu-two {
+    position: absolute;
+    list-style: none;
+    background: #5555;
+    left: -100;
+    display: none;
+}
+
+.menu-two li:hover {
+    background: orange;
+    border-bottom: 1px solid#ccc;
+}
+
+.drop-two:hover>.menu-two {
+    display: block;
+}
+
+span {
+    display: inline-block;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.drop-two:hover span,
+.drop-one:hover span {
+    transform: rotate(-180deg);
+}
+
+@media (max-width:950px) {
+    #navbar {
+        position: absolute;
+        top: 50px;
+        left: -100;
+        text-align: left;
+        transition: 0.5s linear;
+    }
+    #navbar li {
+        display: block;
+    }
+    .menu-one {
+        position: relative;
+        box-shadow: none;
+        display: none;
+    }
+    .drop-one:hover>.menu-one {
+        display: block;
+    }
+    .menu-one ul {
+        text-align: left;
+    }
+    .menu-two {
+        position: relative;
+    }
+    .bars {
+        display: block;
+    }
+    #navbar.active {
+        left: -100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .anh1 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .anh1 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .anh1 img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .products ul {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #f1f2f6;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: 300px;
+}
+
+.card-body ul li a {
+    color: black;
+}
+
+@media screen and (max-width:920px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
     }
 }
