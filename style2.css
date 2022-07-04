@@ -39,20 +39,25 @@
     border-bottom: 1px black;
 }
 
-.hinhanh a div b {
+.hinhanh div b {
     font-size: 33px;
 }
 
-.hinhanh a img {
+.hinhanh img {
     transition: all 0.3s ease-in-out;
     position: relative;
 }
 
-.hinhanh ul li a:hover img {
+.hinhanh ul li :hover img {
     transform: scale(1.1);
 }
 
-.hinhanh a .name {
+.hinhanh :hover .name {
+    bottom: 50%;
+    opacity: 1;
+}
+
+.hinhanh a.name {
     position: absolute;
     color: #333;
     font-weight: bold;
@@ -64,11 +69,6 @@
     transform: translateX(-5%);
     transition: all 0.3s ease-in-out;
     opacity: 0;
-}
-
-.hinhanh a:hover .name {
-    bottom: 50%;
-    opacity: 1;
 }
 
 .drop-down2 {
